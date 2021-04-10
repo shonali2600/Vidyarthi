@@ -8,6 +8,9 @@ const complainSchmea = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'user',
     },
+    likes: {
+        type: String,
+    },
     timestamps: true,
 });
 const post = mongoose.model('complain', complainSchmea);
