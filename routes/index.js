@@ -17,7 +17,7 @@ function ensureGuest(req, res, next) {
     if (!req.isAuthenticated()) {
         return next();
     } else {
-        res.redirect('/dashboard');
+        res.redirect('/profile');
     }
 }
 router.get('/', ensureGuest, function(req, res, next) {
@@ -32,14 +32,16 @@ const checkUserLoggedIn = (req, res, next) => {
     req.user ? next() : res.sendStatus(401);
 };
 router.get('/profile', ensureAuth, userController.profile);
-
+router.get('/profile/edit', ensureAuth, userController.edit);
 router.get('/login', (req, res) => {
     res.render('login', { title: 'profile' });
 });
 
 router.get('/logout', (req, res) => {
-    req.session = null;
-    req.logOut();
+    req.logout();
     res.redirect('/'); //Inside a callback… bulletproof!
+});
+router.get('/complain', (req, res) => {
+    res.render('complain', { title: 'complain' });
 });
 module.exports = router;
