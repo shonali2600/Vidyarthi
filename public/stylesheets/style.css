@@ -1,0 +1,101 @@
+body {
+    /* padding: 50px; */
+    font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #232946;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+}
+
+a {
+    color: #00b7ff;
+}
+
+.logout {
+    width: fit-content;
+    height: 6vh;
+    margin-right: 5vh;
+}
+
+.V {
+    font-family: 'Parisienne', cursive;
+    font-size: 7rem;
+}
+
+.proj_name {
+    font-family: 'Special Elite', cursive;
+}
+
+
+/* =================header ends============== */
+
+
+/* ===========news starts================= */
+
+.newscard {
+    width: 90%;
+}
+
+
+/* ===========news ends================= */
+
+
+/*============= Profile starts===============*/
+
+.vert_line {
+    border-left: 2px solid #191d30;
+    /* box-shadow: 5px 10px 8px #7687c4; */
+    height: 500px;
+}
+
+.container {
+    background-color: #b8c1ec;
+    border-radius: 10px;
+}
+
+.student-profile .card {
+    border-radius: 10px;
+    background-color: #fffffe;
+}
+
+.student-profile .card .card-header .profile_img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 10px solid #ccc;
+    border-radius: 50%;
+}
+
+.student-profile .card h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.student-profile .card p {
+    font-size: 16px;
+    color: #000;
+}
+
+.student-profile .table th,
+.student-profile .table td {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #000;
+}
+
+.edit_profile {
+    height: fit-content;
+    width: 18vh;
+    /* font-size: 0.5rem; */
+}
+
+
+/*============= Profile ends ===============*/
+
+
+/* =================header starts============== */
